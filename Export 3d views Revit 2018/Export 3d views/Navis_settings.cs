@@ -11,15 +11,16 @@ using System.Windows.Forms;
 
 namespace Export_3d_views
 {
-    public partial class Select_Coordinates : Form
+    public partial class Select_Settings : Form
     {
         
-        public Select_Coordinates()
+        public Select_Settings()
         {
             InitializeComponent();
         }
 
         public string rdoChecked { get; set; }
+        public string LrdoChecked { get; set; }
 
         public string MChecked(string coordinate)
         {
@@ -37,6 +38,22 @@ namespace Export_3d_views
             }
         }
 
+        public string LChecked(string links)
+        {
+            if (links == "yes")
+            {
+                LrdoChecked = "yes";
+                //MessageBox.Show(rdoChecked);
+                return LrdoChecked;
+            }
+            else
+            {
+                LrdoChecked = "no";
+                //MessageBox.Show(rdoChecked);
+                return LrdoChecked;
+            }
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -46,6 +63,15 @@ namespace Export_3d_views
             else if (radioButton2.Checked)
             {
                 MChecked("shared");
+            }
+
+            if (radioButton3.Checked)
+            {
+                LChecked("yes");
+            }
+            else if (radioButton4.Checked)
+            {
+                LChecked("no");
             }
         }
 
@@ -63,6 +89,33 @@ namespace Export_3d_views
             {
                 //MessageBox.Show("Internal coordnates selected.");
             }
+        }
+
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
+                //MessageBox.Show("Linked Files Exporting.");
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked == true)
+            {
+                //MessageBox.Show("Linked Files not Exporting.");
+            }
+        }
+
+        private void Select_Coordinates_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

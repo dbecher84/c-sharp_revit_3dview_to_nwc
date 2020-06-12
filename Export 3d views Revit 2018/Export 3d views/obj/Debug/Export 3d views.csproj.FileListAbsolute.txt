@@ -20,3 +20,14 @@ C:\Users\Derek.Becher\source\repos\Export 3d views Revit 2018\Export 3d views\ob
 C:\Users\Derek.Becher\source\repos\Export 3d views Revit 2018\Export 3d views\obj\Debug\aa\Export 3d views.resources.dll
 C:\Users\Derek.Becher\source\repos\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.dll
 C:\Users\Derek.Becher\source\repos\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.pdb
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\bin\Debug\Export 3d views.dll
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\bin\Debug\Export 3d views.pdb
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\bin\Debug\aa\Export 3d views.resources.dll
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.csprojAssemblyReference.cache
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export_3d_views.Select_Settings.resources
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export_3d_views.Form1.resources
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export_3d_views.Select_Settings.aa.resources
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.csproj.GenerateResource.cache
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\aa\Export 3d views.resources.dll
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.dll
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2018\Export 3d views\obj\Debug\Export 3d views.pdb
