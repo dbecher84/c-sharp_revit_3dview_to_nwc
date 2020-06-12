@@ -55,11 +55,11 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="RevitAPI">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -77,11 +77,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Coordinates.cs">
+    <Compile Include="Navis_settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coordinates.Designer.cs">
-      <DependentUpon>Coordinates.cs</DependentUpon>
+    <Compile Include="Navis_settings.Designer.cs">
+      <DependentUpon>Navis_settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -95,11 +95,11 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Coordinates.aa.resx">
-      <DependentUpon>Coordinates.cs</DependentUpon>
+    <EmbeddedResource Include="Navis_settings.aa.resx">
+      <DependentUpon>Navis_settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Coordinates.resx">
-      <DependentUpon>Coordinates.cs</DependentUpon>
+    <EmbeddedResource Include="Navis_settings.resx">
+      <DependentUpon>Navis_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

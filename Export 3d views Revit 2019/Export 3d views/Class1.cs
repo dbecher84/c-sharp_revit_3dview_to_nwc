@@ -39,10 +39,10 @@ namespace export3dviews
             };
 
             //Initiates Radio buttons form for choosing export coordinates
-            var f = new Export_3d_views.Select_Coordinates();
+            var f = new Export_3d_views.Select_Settings();
             f.ShowDialog();
 
-            //sets coordinates based on buttons in form
+            //sets coordinates setting based on buttons in form
             if (f.rdoChecked == "shared")
             {
                 opt.Coordinates = NavisworksCoordinates.Shared;
@@ -51,6 +51,17 @@ namespace export3dviews
             else
             {
                 TaskDialog.Show("Coordinates", "Using" + " " + opt.Coordinates.ToString() + " " + "Coordinates");
+            }
+
+            //sets Export linked files setting based on buttons in form
+            if (f.LrdoChecked == "yes")
+            {
+                opt.ExportLinks = true;
+                TaskDialog.Show("Linked Files", "Linked files will be exported");
+            }
+            else
+            {
+                TaskDialog.Show("Linked Files", "Linked files will NOT be exported");
             }
 
             ////list of view to export
