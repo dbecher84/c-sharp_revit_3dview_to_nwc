@@ -103,17 +103,7 @@ namespace export3dviews
                     }
             }
 
-            //Combine all view into string to show user what was exported
-            //string fullList = "";
-            //for (int i = 0; i < threeDlist.Count; i++)
-            //{
-            //    if (i < threeDlist.Count - 1)
-            //        fullList = fullList + threeDlist[i] + ", ";
-            //    else
-            //        fullList += threeDlist[i];
-            //}
-            //Display list of exported views
-            //TaskDialog.Show("The following view were exported.", fullList);
+            //Display form listing views that were exported
             var d = new Export_3d_views.ExportedList(threeDlist);
             d.ShowDialog();
 
