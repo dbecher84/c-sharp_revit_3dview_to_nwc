@@ -12,11 +12,11 @@ using Form = System.Windows.Forms.Form;
 
 namespace Export_3d_views
 {
-    public partial class Form1 : Form
+    public partial class ViewList : Form
     {
-        List<string> fullList = new List<string>();
+        List<string> FfullList = new List<string>();
 
-        public Form1(List<string> list)
+        public ViewList(List<string> list)
         {
             InitializeComponent();
 
@@ -24,11 +24,11 @@ namespace Export_3d_views
             {
                 //MessageBox.Show(item);
                 listBox1.Items.Add(item);
-                fullList.Add(item);
+                FfullList.Add(item);
             }
         }
 
-        public List<string> exportViewList { get; set; }
+        public List<string> ExportViewList { get; set; }
 
         //create view list to send for export
 
@@ -43,13 +43,13 @@ namespace Export_3d_views
                     //MessageBox.Show(text);
                     viewListWorking.Add(text);
                 }
-                exportViewList = viewListWorking;
-                return exportViewList;
+                ExportViewList = viewListWorking;
+                return ExportViewList;
             }
             else
             {
                 MessageBox.Show("List Box was empty");
-                return exportViewList;
+                return ExportViewList;
             }
         }
 
@@ -147,7 +147,7 @@ namespace Export_3d_views
         private void button5_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (string item in fullList)
+            foreach (string item in FfullList)
             {
                 listBox1.Items.Add(item);
             }

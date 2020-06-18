@@ -77,17 +77,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ExportedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportedList.Designer.cs">
+      <DependentUpon>ExportedList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navis_settings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Navis_settings.Designer.cs">
       <DependentUpon>Navis_settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="viewList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="viewList.Designer.cs">
+      <DependentUpon>viewList.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,14 +101,17 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExportedList.resx">
+      <DependentUpon>ExportedList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Navis_settings.aa.resx">
       <DependentUpon>Navis_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navis_settings.resx">
       <DependentUpon>Navis_settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="viewList.resx">
+      <DependentUpon>viewList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

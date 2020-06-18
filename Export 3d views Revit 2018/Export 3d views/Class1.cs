@@ -64,10 +64,6 @@ namespace export3dviews
                 TaskDialog.Show("Linked Files", "Linked files will NOT be exported");
             }
 
-            ////list of view to export
-            //string[] viewList = {"MEP-Fire", "MEP-Plumbing", "MEP-HVAC Mechanical", "MEP-Piping Mechanincal", "MEP-Piping Process",
-            //    "MEP-Future", "MEP-Electrical", "MEP-ARCH_Export", "MEP-Equipment", "MEP-HVAC Process"};
-
             //collect #d views in revit
             FilteredElementCollector viewCollector = new FilteredElementCollector(doc);
             viewCollector.OfClass(typeof(View3D));
@@ -80,11 +76,11 @@ namespace export3dviews
             }
 
             //initate list of views form
-            var l = new Export_3d_views.Form1(listViewNames);
+            var l = new Export_3d_views.ViewList(listViewNames);
             l.ShowDialog();
 
 
-            //string filePath = @"C:\Users\Derek.Becher\Documents\navis_dynamo_default\test\";
+            //select save folder
             string folderPath = "";
             FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
@@ -98,7 +94,7 @@ namespace export3dviews
             //check if revit view is in list and export to NWC if it is
             foreach (View3D view in viewCollector)
             {
-                foreach (var item in l.exportViewList)
+                foreach (var item in l.ExportViewList)
                     if (view.Name == item)
                     {
                         opt.ViewId = view.Id;
@@ -108,16 +104,18 @@ namespace export3dviews
             }
 
             //Combine all view into string to show user what was exported
-            string fullList = "";
-            for (int i = 0; i < threeDlist.Count; i++)
-            {
-                if (i < threeDlist.Count - 1)
-                    fullList = fullList + threeDlist[i] + ", ";
-                else
-                    fullList += threeDlist[i];
-            }
+            //string fullList = "";
+            //for (int i = 0; i < threeDlist.Count; i++)
+            //{
+            //    if (i < threeDlist.Count - 1)
+            //        fullList = fullList + threeDlist[i] + ", ";
+            //    else
+            //        fullList += threeDlist[i];
+            //}
             //Display list of exported views
-            TaskDialog.Show("The following view were exported.", fullList);
+            //TaskDialog.Show("The following view were exported.", fullList);
+            var d = new Export_3d_views.ExportedList(threeDlist);
+            d.ShowDialog();
 
             return Result.Succeeded;
         }

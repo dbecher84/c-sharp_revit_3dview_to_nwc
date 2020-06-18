@@ -1,6 +1,6 @@
 ﻿namespace Export_3d_views
 {
-    partial class Form1
+    partial class ViewList
     {
         /// <summary>
         /// Required designer variable.
