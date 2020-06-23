@@ -56,7 +56,7 @@
             this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(608, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 52);
@@ -69,7 +69,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(608, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 52);
@@ -92,12 +92,12 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Silver;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(608, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 52);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Clear All";
+            this.button3.Text = "Clear Export List";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.ClearAll);
             // 
@@ -105,12 +105,12 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Silver;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(608, 193);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(177, 52);
             this.button4.TabIndex = 7;
-            this.button4.Text = "Add All";
+            this.button4.Text = "Add All Views";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.AddAll);
             // 
@@ -159,12 +159,12 @@
             // 
             this.button5.BackColor = System.Drawing.Color.Silver;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(608, 106);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 52);
             this.button5.TabIndex = 12;
-            this.button5.Text = "Reset Views";
+            this.button5.Text = "Reset View List";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -178,7 +178,7 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Double Click view to add to Export List";
             // 
-            // Form1
+            // ViewList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,9 +196,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
-            this.Name = "Form1";
+            this.Name = "ViewList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
+            this.Text = "Select 3D Views to Export";
             this.ResumeLayout(false);
             this.PerformLayout();
 

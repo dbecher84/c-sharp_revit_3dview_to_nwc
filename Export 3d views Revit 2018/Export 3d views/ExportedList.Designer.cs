@@ -63,8 +63,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "ExportedList";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "List of Exported VIews";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "List of 3D Views Exported To NWC";
             this.ResumeLayout(false);
 
         }
