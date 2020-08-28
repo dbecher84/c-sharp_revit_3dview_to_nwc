@@ -21,3 +21,4 @@ C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d vie
 C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2019\Export 3d views\obj\Debug\Export 3d views.pdb
 C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2019\Export 3d views\obj\Debug\Export_3d_views.ExportedList.resources
 C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2019\Export 3d views\obj\Debug\Export_3d_views.ViewList.resources
+C:\Users\Derek.Becher\Documents\GitHub\c-sharp_revit_3dview_to_nwc\Export 3d views Revit 2019\Export 3d views\obj\Debug\Export 3d views.csproj.CoreCompileInputs.cache

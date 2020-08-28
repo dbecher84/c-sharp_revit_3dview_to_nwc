@@ -92,15 +92,24 @@ namespace export3dviews
             List<string> threeDlist = new List<string>();
 
             //check if revit view is in list and export to NWC if it is
-            foreach (View3D view in viewCollector)
+            if (l.ExportViewList.Count > 0)
             {
-                foreach (var item in l.ExportViewList)
-                    if (view.Name == item)
-                    {
-                        opt.ViewId = view.Id;
-                        threeDlist.Add(view.Name);
-                        doc.Export(folderPath, view.Name + ".nwc", opt);
-                    }
+
+                foreach (View3D view in viewCollector)
+                {
+                    foreach (var item in l.ExportViewList)
+                        if (view.Name == item)
+                        {
+                            opt.ViewId = view.Id;
+                            threeDlist.Add(view.Name);
+                            doc.Export(folderPath, view.Name + ".nwc", opt);
+                        }
+                }
+            }
+            else
+            {
+                TaskDialog.Show("view error", "Must select one view for export");
+                l.ShowDialog();
             }
 
             //Display form listing views that were exported

@@ -115,4 +115,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)bin\debug\*.addin" "C:\ProgramData\Autodesk\Revit\Addins\2018"
+copy "$(ProjectDir)bin\debug\*.dll" "C:\ProgramData\Autodesk\Revit\Addins\2018"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

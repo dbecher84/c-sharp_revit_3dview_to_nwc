@@ -31,7 +31,6 @@ namespace Export_3d_views
         public List<string> ExportViewList { get; set; }
 
         //create view list to send for export
-
         public List<string> CreateViewList()
         {
             List<string> viewListWorking = new List<string>();
@@ -151,6 +150,11 @@ namespace Export_3d_views
             {
                 listBox1.Items.Add(item);
             }
+        }
+
+        private void ViewList_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

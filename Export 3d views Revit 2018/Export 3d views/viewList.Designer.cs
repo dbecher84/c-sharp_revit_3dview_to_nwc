@@ -199,6 +199,7 @@
             this.Name = "ViewList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Select 3D Views to Export";
+            this.Load += new System.EventHandler(this.ViewList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
