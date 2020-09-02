@@ -76,7 +76,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="export3d.cs" />
     <Compile Include="ExportedList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +114,12 @@
       <DependentUpon>viewList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Exportedviews.addin" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)bin\debug\*.addin" "C:\ProgramData\Autodesk\Revit\Addins\2018"
+    <PostBuildEvent>copy "$(ProjectDir)\*.addin" "C:\ProgramData\Autodesk\Revit\Addins\2018"
 copy "$(ProjectDir)bin\debug\*.dll" "C:\ProgramData\Autodesk\Revit\Addins\2018"</PostBuildEvent>
   </PropertyGroup>
 </Project>

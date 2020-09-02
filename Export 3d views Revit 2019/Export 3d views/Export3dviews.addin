@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>Export 3d views.dll</Assembly>
+		<AddInId>239BD853-36E4-461f-9171-C5ACEDA4E722</AddInId>
+		<FullClassName>export3dviews.export3d</FullClassName>
+		<Text>NWC-Export 3D Views</Text>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>

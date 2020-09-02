@@ -16,7 +16,7 @@ namespace export3dviews
 {
     [Transaction(TransactionMode.Manual)]
     [Regeneration(RegenerationOption.Manual)]
-    public class Class1 : IExternalCommand
+    public class export3d : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
